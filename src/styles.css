@@ -1,0 +1,13 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+
+body{
+    font-family: 'Martel Sans',Helvetica,Arial,Lucida,sans-serif;
+}
+
+:root {
+    --header-blue: #162968;
+    --light-blue: #e8eaf0;
+    --text: #2b3340;
+    --accent: #ba2a49;
+  }
