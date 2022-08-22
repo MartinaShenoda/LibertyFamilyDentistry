@@ -1,0 +1,53 @@
+<section id="first">
+    <div class="container-fluid">
+        <div class="about-office">
+            <h1 id="title">How Liberty Family Dentistry <br> Can Help You..</h1>
+
+            <p id="content">Our liberty family dentist office was built for people of all ages and high-quality dental care for your whole family. 
+                We love to celebrate with you the joy of a happy, healthy smile. We combine cutting-edge dentistry with a team who treats you like family. 
+                Enjoy personalized appointments and all-encompassing dental care provided by our own Dr. Magi Sargious.  
+    
+                You’ll feel right at home at our liberty family dentist office thanks to our focus on your comfort, health, and happiness.</p>
+                
+            <button class="button-services">View All Services</button>
+        </div>
+        <div class="our-services">
+            <div class="our-services-cards">
+                <div class="card" *ngFor="let card of CARDS">
+                    <div class="card-body">{{card.service}}</div>
+                    <div class="card-title"><img width={{card.width}} src={{card.icon}}> </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="second">
+    <div class="container-fluid why-us-container">
+        <div class="why-us">
+            <h1>Why Choose Us?</h1>
+        </div>
+        <div class="why-us-reasons">
+            <div class="item">
+                <i class="fa fa-check-circle-o fa-3x" ></i>
+                <h3>Comprehensive Services</h3>
+                <p>We’re your one-stop-shop for dental care. 
+                    Whatever you’re experiencing, we have the experience, 
+                    technology, and compassion to help reach your goals.</p>
+            </div>
+            <div class="item">
+                <i class="fa fa-check-circle-o fa-3x" ></i>
+                <h3>Care When You Need It</h3>
+                <p>We offer same-day care for when you’re in pain or facing an emergency. 
+                    Early morning and evening appointments are available to fit your busy schedule.</p>
+            </div>
+            <div class="item">
+                <i class="fa fa-check-circle-o fa-3x" ></i>
+                <h3>Your Comfort, Our Priority</h3>
+                <p>Enjoy a relaxing office environment and welcoming team. 
+                    Plus, we offer advanced sedation options to ensure your comfort a
+                    nd help those with anxiety.</p>
+            </div>
+        </div>
+    </div>
+</section>
