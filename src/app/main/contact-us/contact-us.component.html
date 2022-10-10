@@ -1,0 +1,51 @@
+<Section>
+    <div class="container-fluid">
+        <h1 class="contact-title">Get In Touch</h1>
+        <p class="contact-body">Please fill out the quick form and we will be in touch soon. <strong> If you need an emergency dentist appointment TODAY, please call the dental office directly.</strong> </p>
+    </div>
+    <div class="container-fluid form-content">
+        <div class="form-group">
+            <form [formGroup]="formdata"  (submit)="sendEmail(formdata.value)" ngNativeValidate>
+                <legend>Name <span class="required">*</span></legend> 
+                <div class="fieldset name">
+                    <div class="name-input">
+                        <input formControlName="firstName" class="form-control" placeholder="First" required>
+                        <label for="firstName">First Name</label>
+                    </div>
+
+                    <div class="name-input">
+                        <input formControlName="lastName" class="form-control" placeholder="Last" required>
+                        <label for="lastName">Last Name</label>
+                    </div>
+                </div>    
+
+                <legend>Email <span class="required">*</span></legend> 
+                <div class="fieldset email">
+                    <div class="email-input">
+                        <input formControlName="email" class="form-control" placeholder="email" type="Email" required>
+                    </div>
+                </div>  
+                
+                <legend>Phone <span class="required">*</span></legend> 
+                <div class="fieldset phone">
+                    <div class="phone-input">
+                        <input formControlName="phone" class="form-control" placeholder="Phone Number" type="text" mask="(000) 000-0000" required>
+                    </div>
+
+                    <div *ngIf="m.phone.touched && m.phone.invalid" class="alert alert-danger">
+                        <div *ngIf="m.phone.errors?.required">Please enter a valid number</div>
+                        <div *ngIf="m.phone.errors?.pattern">Phone number is not 10 digits</div>
+                      </div>
+                </div>
+
+                <legend>Comments or Questions <span class="required">*</span></legend> 
+                <div class="fieldset comments">
+                    <div class="phone-input">
+                        <textarea formControlName="comments" class="form-control" type="text" rows=10 required></textarea>
+                    </div>
+                </div>
+            <button class="btn" type="submit">Send</button>
+        </form></div>
+        
+    </div>
+</Section>

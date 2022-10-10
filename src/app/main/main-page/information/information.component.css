@@ -1,0 +1,182 @@
+section{
+    position: relative;
+    z-index: 2;
+}
+.container-fluid{
+    height:90vh;
+    display:flex;
+    margin-left: 7rem;
+    padding-top: 4rem;
+    width: 85%;
+}
+
+.about-office{
+    width: 45%;
+    margin-right: 5rem;
+    line-height: 1.6em;
+}
+.about-office p{
+    color:var(--text);
+    font-size: 1.125rem;
+}
+.about-office #title{
+    color:var(--header-blue);
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 1.6em;
+}
+
+.our-services{
+    width:65%;
+}
+
+.our-services-cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 4rem;
+
+}
+.card{
+    border-radius: 2rem;
+    text-align: center;
+    transition: .1s ease-in-out;
+    position: relative;
+    width: 90%;
+    padding: 1rem;
+    background-color: #fff;
+    border: 1px solid #fff;
+    box-shadow: 0 0 15px #c6cfdc;
+    color: grey;
+}
+
+.card:hover{
+    z-index:3;
+    color: var(--accent);
+    font-weight:bold;
+    box-shadow: 0 0 50px #c6cfdc;
+}
+
+.card .card-title img{
+    transition: .1s ease-in-out;
+}
+
+.card:hover .card-title img{
+    font-weight:bold;
+    filter: invert(12%) sepia(69%) saturate(2473%) hue-rotate(220deg) brightness(92%) contrast(96%);
+}
+
+button{
+    color: #ffffff!important;
+    border-color:  transparent !important;
+    border-radius: 30px;
+    font-size: 14px;
+    font-family: 'Martel Sans',Helvetica,Arial,Lucida,sans-serif!important;
+    font-weight: 600!important;
+    text-transform: uppercase!important;
+    background-color:  var(--button-blue) !important;
+    padding-top: 10px!important;
+    padding-right: 50px!important;
+    padding-bottom: 10px!important;
+    padding-left: 50px!important;
+    margin-top:3.5rem;
+}
+
+/* WHy Us */
+.container-fluid.why-us-container{
+    display: flex;
+    flex-direction: column !important;
+    align-items: center;
+    margin:0 0 5rem 0;
+    width: 100%;
+    height:100%;
+    border-top: 0.25rem #c6cfdc solid;
+}
+
+.why-us-reasons{
+    display: flex;
+    flex-direction: row;
+    margin-left: 12rem;
+    margin-right: 12rem;
+}
+.why-us-reasons .item{
+    width: 100%;
+    padding:4rem 1rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: var(--text);
+}
+.why-us h1{
+    color:var(--header-blue)
+}
+
+.why-us-reasons .item h3{
+    margin-bottom: 2rem;
+}
+.why-us-reasons .item i{
+    margin-bottom: 2rem;
+    -webkit-text-stroke: 1px !important;
+    color:var(--accent);
+}
+
+/* Mobile View */
+@media only screen and (max-width: 600px){
+    .container-fluid{
+        height: 100vh;
+        padding:0;
+        flex-direction: column;
+        align-content: space-between;
+        justify-content: flex-start;
+        margin-left: 2rem;
+        margin-top: 3rem;
+        align-items: center;
+    }
+
+    .about-office{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        margin:0;
+    }
+
+    .our-services-cards{
+        margin-top: 3rem;
+        grid-template-columns: 1fr;
+        place-items: center;
+    }
+
+    section#first{
+        min-height: 2300px;
+    }
+
+    /* Why Us */
+    .container-fluid.why-us-container{
+        padding:0;
+        height: 100vh;
+        flex-direction: column;
+        align-content: space-between;
+        justify-content: flex-start;
+    }
+
+    .why-us{
+        margin-top: 5rem;
+        margin-bottom: 2rem;
+    }
+
+    .why-us-reasons{
+        display: flex;
+        flex-direction: column;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+    
+    .why-us-reasons .item{
+        padding: 1rem 1rem;
+    }
+    
+    section#second{
+        min-height: 67rem;
+    }
+}

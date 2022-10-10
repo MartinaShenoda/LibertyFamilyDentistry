@@ -1,0 +1,400 @@
+* {
+    margin: 0px;
+  }
+
+.container-fluid{
+    height: 95vh;
+    display: flex;
+    flex-direction: row;
+    margin:0;
+    z-index: 1;
+    width: 100%;
+    overflow: hidden;
+    padding: 0 0 0 0;
+    /* background-image: linear-gradient(90deg,rgba(40,99,112,0.3) 32%,#f4f1e8 32%)!important; */
+}
+
+.container-fluid.services{
+    height: 55vh;
+    /* border-radius: 0 0 50px; */
+}
+
+.content-picture{
+    /* object-fit: fill;
+    z-index: 100;*/
+    width: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(../../../assets/img/hero3.jpeg);
+    /* background-image: linear-gradient(#1c3382,#435989); */
+    /* background-color:  #2d3e77 !important; */
+}
+
+.content-body{
+    margin-top: 14rem;
+    margin-left:10rem;
+    z-index: 5;
+}
+
+.content-body h1{
+    color: white;
+    font-size: 60px;
+    line-height: 2em;
+    font-weight: bolder;
+}
+.content-body h3{
+    color: white;
+    font-size: 30px;
+    line-height: 2em;
+}
+
+.content-body p{
+    color: white;
+    font-size: 20px;
+}
+
+.content-body button{
+    color: #ffffff!important;
+    border-color: transparent !important;
+    border-radius: 30px;
+    font-size: 16px;
+    font-family: 'Martel Sans',Helvetica,Arial,Lucida,sans-serif!important;
+    font-weight: 600!important;
+    text-transform: uppercase!important;
+    background-color: var(--button-blue) !important;
+    padding-top: 20px!important;
+    padding-right: 50px!important;
+    padding-bottom: 20px!important;
+    padding-left: 50px!important;
+    margin-top: 3.5rem;
+}
+
+/* SERVICES */
+.services-picture{
+    /* object-fit: fill;
+    z-index: 100;*/
+    width: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(../../../assets/img/hero3.jpeg);
+    /* background-image: linear-gradient(#1c3382,#435989); */
+    /* background-color:  #2d3e77 !important; */
+}
+
+.services-body{
+    margin-top: 14rem;
+    margin-left:10rem;
+    z-index: 5;
+}
+
+.services-body h1{
+    color: white;
+    font-size: 60px;
+    line-height: 2em;
+    font-weight: bolder;
+}
+
+.services-body h3{
+    color: white;
+    line-height: 2em;
+}
+
+.services-body h3 a{
+    color: #c6cfdc;
+    text-decoration: none;
+    margin-right: 0.5rem;
+}
+
+.services-body h3 span{
+    font-size: large;
+    top:-1px;
+    margin-right: 0.5rem;
+}
+
+.services-body h3 a:hover{
+    color:white;
+}
+
+/* ABOUT US */
+
+.container-fluid.about-us{
+    height: 55vh;
+    /* border-radius: 0 0 50px; */
+}
+.about-us-picture{
+    /* object-fit: fill;
+    z-index: 100;*/
+    width: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(../../../assets/img/hero3.jpeg);
+    /* background-image: linear-gradient(#1c3382,#435989); */
+    /* background-color:  #2d3e77 !important; */
+}
+
+.about-us-body{
+    margin-top: 14rem;
+    margin-left:10rem;
+    z-index: 5;
+}
+
+.about-us-body h1{
+    color: white;
+    font-size: 60px;
+    line-height: 2em;
+    font-weight: bolder;
+}
+
+.about-us-body h3{
+    color: white;
+    line-height: 2em;
+}
+
+.about-us-body h3 a{
+    color: #c6cfdc;
+    text-decoration: none;
+    margin-right: 0.5rem;
+}
+
+.about-us-body h3 span{
+    font-size: large;
+    top:-1px;
+    margin-right: 0.5rem;
+}
+
+.about-us-body h3 a:hover{
+    color:white;
+}
+
+/* CONTACT US */
+.container-fluid.contact-us{
+    height: 55vh;
+    /* border-radius: 0 0 50px; */
+}
+.contact-us-picture{
+    /* object-fit: fill;
+    z-index: 100;*/
+    width: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(../../../assets/img/hero3.jpeg);
+    /* background-image: linear-gradient(#1c3382,#435989); */
+    /* background-color:  #2d3e77 !important; */
+}
+
+.contact-us-body{
+    margin-top: 14rem;
+    margin-left:10rem;
+    z-index: 5;
+}
+
+.contact-us-body h1{
+    color: white;
+    font-size: 60px;
+    line-height: 2em;
+    font-weight: bolder;
+}
+
+.contact-us-body h3{
+    color: white;
+    line-height: 2em;
+}
+
+.contact-us-body h3 a{
+    color: #c6cfdc;
+    text-decoration: none;
+    margin-right: 0.5rem;
+}
+
+.contact-us-body h3 span{
+    font-size: large;
+    top:-1px;
+    margin-right: 0.5rem;
+}
+
+.contact-us-body h3 a:hover{
+    color:white;
+}
+
+#smile-patient{
+    position: relative;
+    top: 20vh;
+    margin-left: 5px;
+    width:85%;
+    box-shadow: 12px 12px 18px -14px rgb(0 0 0 / 30%);
+}
+
+
+#dental-equipment{
+    display: inline-block;
+    position: relative;
+    margin-left: 15rem;
+    width: 350px;
+    height: 390px;
+    box-shadow: 12px 12px 18px -14px rgb(0 0 0 / 30%);
+    top: 45px;
+}
+
+.content-text{
+    width: 70%;
+    background-color: #e8eaf0!important;
+    padding-top: 30vh;
+    padding-left: 10rem;
+}
+
+.sub-header{
+    font-family: 'Century Gothic Regular',Helvetica,Arial,Lucida,sans-serif;
+    font-weight: 700;
+    font-size: 70px;
+    /* color: #00626f!important; */
+    color:  var(--header-blue) !important;
+    line-height: 1.2em;
+}
+
+.header{
+    font-family: 'Century Gothic Regular',Helvetica,Arial,Lucida,sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    /* color: #00626f!important; */
+    color:  var(--header-blue) !important;
+    line-height: 2.2em;
+}
+
+.learn-more{
+    color: #ffffff!important;
+    border-color:  var(--header-blue) !important;
+    border-radius: 50px;
+    font-size: 16px;
+    font-family: 'Martel Sans',Helvetica,Arial,Lucida,sans-serif!important;
+    font-weight: 700!important;
+    text-transform: uppercase!important;
+    background-color:  var(--header-blue) !important;
+    padding-top: 14px!important;
+    padding-right: 60px!important;
+    padding-bottom: 14px!important;
+    padding-left: 60px!important;
+    margin-top:3.5rem;
+}
+
+.hero-text{
+    color: white;
+}
+
+@media only screen and (max-width: 600px){
+    .container-fluid{
+        display: block;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 90vh;
+    }
+    .content-picture{
+        object-fit: cover;
+        z-index: 100;
+        width: 100%;
+        height: 90%;
+        /* background-image: url(../../assets/img/blue-grain-dental.jpeg); */
+        /* background-image: linear-gradient(#1c3382,#435989); */
+        background-color:  #bdc5e0 !important;
+        position: absolute;
+    }
+
+    .content-body{
+        margin: 2.5rem;
+    }
+
+    .content-body h1{
+        font-size: 51px;
+        line-height: 1.5em;
+    }
+
+    #smile-patient{
+        display: none;
+    }
+
+    #dental-equipment{
+        display: none;
+        /* width:100%;
+        position: relative;
+        margin-left: 0;
+        top:0; */
+    }
+
+    .content-text{
+        position: absolute;
+        width: auto;
+        background-color: transparent !important;
+        padding-top:9rem;
+        padding-left: 2rem;
+        padding-right: 1rem;
+    }
+
+    .sub-header{
+        font-family: 'Century Gothic Regular',Helvetica,Arial,Lucida,sans-serif;
+        font-weight: 700;
+        color: var(--header-blue) !important;
+        line-height: 1.2em;
+        font-size: 45px;
+    }
+
+    /* SERVICES */
+    .container-fluid.services{
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 30vh;
+        display: flex;
+    }
+
+    .services-body{
+        margin:5rem 2rem;
+    }
+
+    .services-body h1{
+        font-size:20px
+    }
+
+    /* ABOUT US */
+    .container-fluid.about-us{
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 30vh;
+        display: flex;
+    }
+
+    .about-us-body{
+        margin:5rem 2rem;
+    }
+
+    .about-us-body h1{
+        font-size:20px
+    }
+    
+    /* CONTACT US */
+    .container-fluid.about-us{
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 30vh;
+        display: flex;
+    }
+
+    .contact-us-body{
+        margin:5rem 2rem;
+    }
+
+    .contact-us-body h1{
+        font-size:20px
+    }
+        
+
+}
