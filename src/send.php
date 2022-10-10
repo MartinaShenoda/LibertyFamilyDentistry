@@ -14,10 +14,12 @@ switch($_SERVER['REQUEST_METHOD']){
         $params = json_decode($json);
 
         $email = $params->email;
-        $name = $params->name;
-        $message = $params->message;
+        $firstname = $params->firstName;
+        $lastname = $params->lastName;
+        $phone = $params->phone;
+        $message = $params->comments;
 
-        $recipient = 'targetInbox@exmaple.com';
+        $recipient = 'no-reply@libertylanedentistry.com';
         $subject = 'new message';
         $headers = "From: $name <$email>";
 
