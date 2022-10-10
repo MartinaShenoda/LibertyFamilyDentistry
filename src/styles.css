@@ -3,11 +3,14 @@
 
 body{
     font-family: 'Martel Sans',Helvetica,Arial,Lucida,sans-serif;
-}
-
+    --navbar-scroll: transparent; 
+    --navbar-scroll-text: white;
+    --navbar-scroll-shadow: none;
+   }
 :root {
     --header-blue: #162968;
     --light-blue: #e8eaf0;
+    --button-blue: #2544a8;
     --text: #2b3340;
     --accent: #ba2a49;
   }
