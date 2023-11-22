@@ -14,6 +14,8 @@ import { ContactUsComponent } from './main/contact-us/contact-us.component';
 import { MainModule } from './main/main.module';
 import { MainComponent } from './main/main.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ToastrModule } from 'ngx-toastr';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -21,15 +23,17 @@ import { HttpClientModule } from '@angular/common/http';
     NavBarComponent,
     HeroComponent,
     ServicesComponent,
-    MainComponent
+    MainComponent,
   ],
   imports: [
+    BrowserAnimationsModule,
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
     FormsModule,
     MainModule,
     HttpClientModule,
+    ToastrModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]

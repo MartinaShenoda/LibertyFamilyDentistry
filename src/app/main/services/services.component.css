@@ -9,6 +9,10 @@ section{
     color: var(--header-blue)
 }
 
+.services-body{
+    font-size: larger;
+}
+
 .our-services-cards{
     margin-top: 3.5rem;
     display: grid;
@@ -26,8 +30,22 @@ section{
     box-shadow: 0 0 15px #c6cfdc;
 }
 
+.card:hover{
+    z-index:3;
+    box-shadow: 0 0 50px #c6cfdc;
+    cursor: pointer;
+}
+
+.card:hover h4{
+    font-weight: bold;
+}
+
+
 .card-body{
     padding:3rem 2rem;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .card-title{
@@ -40,16 +58,48 @@ section{
 }
 
 .card-title img{
-    filter: invert(12%) sepia(69%) saturate(2473%) hue-rotate(220deg) brightness(92%) contrast(96%);
+    transition: .1s ease-in-out;
 }
 
-@media only screen and (max-width: 600px){
+.card:hover .card-title img{
+    font-weight:bold;
+    filter: invert(12%) sepia(69%) saturate(2473%) hue-rotate(220deg) brightness(92%) contrast(96%);
+    filter: drop-shadow(0 0 0.75px var(--header-blue));
+}
+
+@media only screen and (min-width: 360px) and (max-width: 767px){
     section{
-        margin: 1rem 2rem;
+        margin: 2rem 2rem 5rem;
     }
     .our-services-cards{
         margin-top: 3rem;
         grid-template-columns: 1fr;
+        place-items: center;
+    }
+    .card{
+        flex-direction: column-reverse;
+    }
+    .card-title{
+        justify-content: center;
+        margin-top:1rem;
+        margin-left: 0;
+    }
+    .card-body{
+        padding:0.5rem 2rem;
+        text-align: center;
+    }
+    .card-body h4{
+        font-weight: bold;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1280px){
+    section{
+        margin: 2rem 2rem 5rem;
+    }
+    .our-services-cards{
+        margin-top: 3rem;
+        grid-template-columns: 1fr 1fr;
         place-items: center;
     }
     .card{

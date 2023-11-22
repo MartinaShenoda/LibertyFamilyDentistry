@@ -58,35 +58,28 @@
       <a class="navbar-brand" href="#">
         <img src="../../assets/img/logo-2.png" class="d-inline-block align-top" alt="" id="logo">
         <!-- Liberty Family Dentistry -->
-        </a>
+      </a>
+      <button class="mobile-call"><a href="tel:(931)304-8447">CALL US <i class="fa fa-volume-control-phone" aria-hidden="true"></i></a></button>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent" >
         <ul class="navbar-nav navbar-right">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">HOME</a>
+            <a class="nav-link active" aria-current="page" href="#" (click)=ToggleNavBar()>HOME</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" routerLink="/services">SERVICES</a>
+            <a class="nav-link" routerLink="/services" (click)=ToggleNavBar()>SERVICES</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" routerLink="/about-us">ABOUT</a>
+            <a class="nav-link" routerLink="/about-us" (click)=ToggleNavBar()>ABOUT</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" routerLink="/contact-us">CONTACT US</a>
+            <a class="nav-link" routerLink="/contact-us" (click)=ToggleNavBar()>CONTACT US</a>
           </li>
-          <!-- <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Our Services
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </li> -->
+          <li class="nav-item pay">
+            <a class="nav-link" routerLink="/pay-now" (click)=ToggleNavBar()>PAY YOUR BILL</a>
+          </li>
         </ul>
       </div>
     </div>

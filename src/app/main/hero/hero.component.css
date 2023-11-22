@@ -27,7 +27,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(../../../assets/img/hero3.jpeg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(../../../assets/img/mcminniville-hero.jpg);
     /* background-image: linear-gradient(#1c3382,#435989); */
     /* background-color:  #2d3e77 !important; */
 }
@@ -80,7 +80,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(../../../assets/img/hero3.jpeg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(../../../assets/img/mcminniville-hero-service.jpg);
     /* background-image: linear-gradient(#1c3382,#435989); */
     /* background-color:  #2d3e77 !important; */
 }
@@ -133,7 +133,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(../../../assets/img/hero3.jpeg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(../../../assets/img/mcminniville-hero-service.jpg);
     /* background-image: linear-gradient(#1c3382,#435989); */
     /* background-color:  #2d3e77 !important; */
 }
@@ -185,7 +185,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(../../../assets/img/hero3.jpeg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(../../../assets/img/mcminniville-hero-service.jpg);
     /* background-image: linear-gradient(#1c3382,#435989); */
     /* background-color:  #2d3e77 !important; */
 }
@@ -224,6 +224,59 @@
     color:white;
 }
 
+/* PAY NOW */
+
+.container-fluid.pay-now{
+    height: 55vh;
+    /* border-radius: 0 0 50px; */
+}
+.pay-now-picture{
+    /* object-fit: fill;
+    z-index: 100;*/
+    width: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(../../../assets/img/mcminniville-hero-service.jpg);
+    /* background-image: linear-gradient(#1c3382,#435989); */
+    /* background-color:  #2d3e77 !important; */
+}
+
+.pay-now-body{
+    margin-top: 14rem;
+    margin-left:10rem;
+    z-index: 5;
+}
+
+.pay-now-body h1{
+    color: white;
+    font-size: 60px;
+    line-height: 2em;
+    font-weight: bolder;
+}
+
+.pay-now-body h3{
+    color: white;
+    line-height: 2em;
+}
+
+.pay-now-body h3 a{
+    color: #c6cfdc;
+    text-decoration: none;
+    margin-right: 0.5rem;
+}
+
+.pay-now-body h3 span{
+    font-size: large;
+    top:-1px;
+    margin-right: 0.5rem;
+}
+
+.pay-now-body h3 a:hover{
+    color:white;
+}
+/*  */
 #smile-patient{
     position: relative;
     top: 20vh;
@@ -288,19 +341,20 @@
     color: white;
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (min-width: 360px) and (max-width: 767px){
     .container-fluid{
         display: block;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        height: 90vh;
+        height: 97vh;
     }
     .content-picture{
         object-fit: cover;
         z-index: 100;
         width: 100%;
-        height: 90%;
+        min-height: 90%;
+        max-height: 100%;
         /* background-image: url(../../assets/img/blue-grain-dental.jpeg); */
         /* background-image: linear-gradient(#1c3382,#435989); */
         background-color:  #bdc5e0 !important;
@@ -311,6 +365,9 @@
         margin: 2.5rem;
     }
 
+    .content-body p{
+        font-size: 18px;
+    }
     .content-body h1{
         font-size: 51px;
         line-height: 1.5em;
@@ -350,16 +407,19 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        height: 30vh;
+        height: auto;
         display: flex;
     }
 
     .services-body{
-        margin:5rem 2rem;
+        margin:3rem 2rem;
     }
 
     .services-body h1{
-        font-size:20px
+        font-size:25px
+    }
+    .services-body h3{
+        font-size:15px
     }
 
     /* ABOUT US */
@@ -380,7 +440,7 @@
     }
     
     /* CONTACT US */
-    .container-fluid.about-us{
+    .container-fluid.contact-us{
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -396,5 +456,14 @@
         font-size:20px
     }
         
+    .content-body button{
+        font-size: small;
+    }
+}
 
+@media only screen and (min-width: 768px) and (max-width: 1280px){
+    .content-body {
+        margin-top: 17rem;
+        margin-left: 3rem;
+    }
 }

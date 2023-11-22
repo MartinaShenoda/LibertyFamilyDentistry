@@ -45,13 +45,16 @@ section{
     filter: invert(12%) sepia(69%) saturate(2473%) hue-rotate(220deg) brightness(92%) contrast(96%);
 }
 
+.container-fluid.doctor-img {
+    display: none;
+}
 .container-fluid.doctor-img img{
     border-radius: 2rem;
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (min-width: 360px) and (max-width: 767px){
     section{
-        margin: 1rem 2rem;
+        margin: 1rem 2rem 5rem;
         flex-direction: column;
     }
     .container-fluid.doctor-img{

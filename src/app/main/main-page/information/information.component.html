@@ -9,12 +9,13 @@
     
                 You’ll feel right at home at our liberty family dentist office thanks to our focus on your comfort, health, and happiness.</p>
                 
-            <button class="button-services">View All Services</button>
+            <a routerLink="/services"><button class="button-services" >View All Services</button></a>
         </div>
         <div class="our-services">
             <div class="our-services-cards">
                 <div class="card" *ngFor="let card of CARDS" routerLink="/services">
-                    <div class="card-body">{{card.service}}</div>
+                    <div class="card-body" *ngIf="card.service != 'Invisalign'">{{card.service}}</div>
+                    <div class="card-body" *ngIf="card.service == 'Invisalign'">{{card.service}}&#174;</div>
                     <div class="card-title"><img width={{card.width}} src={{card.icon}}> </div>
                 </div>
             </div>
@@ -45,8 +46,8 @@
                 <i class="fa fa-check-circle-o fa-3x" ></i>
                 <h3>Your Comfort, Our Priority</h3>
                 <p>Enjoy a relaxing office environment and welcoming team. 
-                    Plus, we offer advanced sedation options to ensure your comfort a
-                    nd help those with anxiety.</p>
+                    Plus, we offer advanced sedation options to ensure your comfort
+                    and help those with anxiety.</p>
             </div>
         </div>
     </div>

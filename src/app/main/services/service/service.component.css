@@ -1,0 +1,36 @@
+a{
+    text-decoration: none;
+    color: #a6a3a3;
+}
+a:hover{
+    color: var(--header-blue);
+}
+
+h1{
+    color: var(--header-blue);
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+p{
+    font-size: larger;
+}
+
+li{
+    font-size: larger;
+}
+
+.container-fluid{
+    padding:5rem 10rem;
+}
+
+@media only screen and (min-width: 360px) and (max-width: 767px){
+    .container-fluid{
+        padding:3rem 2rem;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 1280px){
+    .container-fluid{
+        padding:3rem 2rem;
+    }
+}

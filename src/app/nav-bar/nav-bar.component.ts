@@ -12,6 +12,20 @@ export class NavBarComponent implements OnInit {
  ngOnInit(): void {
   //  window.addEventListener('scroll', this.scroll, true)
  }
+ menuVisible = false;
+
+ ToggleNavBar () {
+  let element: HTMLElement = document.getElementsByClassName( 'navbar-toggler' )[ 0 ] as HTMLElement;
+  if ( element.getAttribute( 'aria-expanded' ) == 'true' ) {
+      element.click();
+  }
+
+}
+
+ 
+  toggleMenu() {
+    this.menuVisible = !this.menuVisible;
+  }
 
   // scroll = (): void => {
 

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { FormGroup, FormControl, Validators, FormBuilder } from '@angular/forms';
+import { ToastrService } from 'ngx-toastr'; 
 
 @Component({
   selector: 'app-contact-us',
@@ -12,7 +13,7 @@ export class ContactUsComponent implements OnInit {
   formdata: any;
   http : HttpClient;
   phone: any = '';
-  constructor(http : HttpClient, private formBuilder: FormBuilder) { 
+  constructor(http : HttpClient, private formBuilder: FormBuilder, private toastr: ToastrService) { 
     this.http = http;
     // this.email = "hpierce@example.com";
     // this.name = "Hayden Pierce";
@@ -34,19 +35,11 @@ export class ContactUsComponent implements OnInit {
   }
 
   sendEmail(result:any){
-    console.log(result)
-    console.log("sending")
-    // let postVars = {
-    //   email : this.email,
-    //   name : this.name,
-    //   message : this.message
-    // };
-
-    //You may also want to check the response. But again, let's keep it simple.
     this.http.post(this.endpoint, result)
         .subscribe(
-            response => console.log(response),
-            response => console.log(response)
+            response => {
+              this.toastr.success("Your message was sent successfully","Success")
+            }
         )
   }
   // onSubmit(FormData: any) {

@@ -7,8 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InformationComponent implements OnInit {
   CARDS = [
-    {service: "Dental Crowns", icon:"../../../assets/img/tooth-icons/crown-tooth.svg", width:"90"},
-    {service: "Dental Exam & Check-Ups", icon:"../../../assets/img/tooth-icons/exam-tooth.svg", width:"90"},
+    {service: "Dental Crowns And Bridges", icon:"../../../assets/img/tooth-icons/crown-tooth.svg", width:"90"},
+    {service: "Dental Exam And Check-Ups", icon:"../../../assets/img/tooth-icons/exam-tooth.svg", width:"90"},
     {service: "Dental Implants",  icon:"../../../assets/img/tooth-icons/implant-tooth.svg", width:"100"},
     {service: "Invisalign", icon:"../../../assets/img/tooth-icons/star-tooth.svg", width:"90"},
     {service: "Tooth Extractions", icon:"../../../assets/img/tooth-icons/tooth.svg", width:"90"},

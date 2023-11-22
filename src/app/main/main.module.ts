@@ -11,7 +11,9 @@ import { ServicesComponent } from './services/services.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { HeroComponent } from './hero/hero.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { NgxMaskModule, IConfig } from 'ngx-mask'
+import { NgxMaskModule, IConfig } from 'ngx-mask';
+import { ServiceComponent } from './services/service/service.component';
+import { PayComponent } from './pay/pay.component'
 
 // export const options: Partial<null|IConfig> | (() => Partial<IConfig>) = null;
 
@@ -23,6 +25,8 @@ import { NgxMaskModule, IConfig } from 'ngx-mask'
     MainPageComponent,
     ServicesComponent,
     AboutUsComponent,
+    ServiceComponent,
+    PayComponent,
   ],
   imports: [
     CommonModule,

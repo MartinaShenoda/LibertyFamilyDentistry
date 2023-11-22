@@ -1,4 +1,22 @@
-<section>
+<section *ngIf="page == '/services'">
+    <div class="container-fluid">
+        <h1 class="services-title">Services</h1>
+        <span class="services">We provide emergency dentistry, family dentistry, and high-quality cosmetic dentistry. We work with most dental insurances and are currently accepting new patients. Please give us a call today to schedule your appointment.</span>
+    </div>
+    <div class="container-fluid">
+        <div class="our-services-cards">
+            <div class="card" *ngFor="let card of CARDS" (click)="goToSubpage(card.service)">
+                <div class="card-body" >
+                    <h4 *ngIf="card.service != 'Invisalign'">{{card.service}}</h4>
+                    <h4 *ngIf="card.service == 'Invisalign'">{{card.service}}&#174;</h4>
+                    <p>{{card.text}}</p>
+                </div>
+                <div class="card-title"><img width={{card.width}} src={{card.icon}}> </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- <section>
     <div class="container-fluid">
         <h1 class="services-title">Services</h1>
         <span>We provide emergency dentistry, family dentistry, and high-quality cosmetic dentistry. We work with most dental insurances and are currently accepting new patients. Conveniently schedule your appointment online today.</span>
@@ -8,11 +26,12 @@
             <div class="card" *ngFor="let card of CARDS">
                 <div class="card-body">
                     <h4>{{card.service}}</h4>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam vero quisquam, nulla reiciendis exercitationem culpa odio voluptas facilis blanditiis incidunt error amet quibusdam dolorum totam iure eveniet earum vitae tempore?</p>
+                    <p>{{card.text}}</p>
                 </div>
                 <div class="card-title"><img width={{card.width}} src={{card.icon}}> </div>
             </div>
         </div>
     </div>
-</section>
+</section> -->
+<app-service></app-service>
 <app-footer></app-footer>

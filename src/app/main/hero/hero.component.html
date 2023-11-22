@@ -1,34 +1,33 @@
 <div class="container-fluid" *ngIf="page == '/'">
     <div class="content-picture">
-        <!-- <img id="smile-patient" src="../../assets/img/smile-patient.jpeg">
-        <img id="dental-equipment" src="../../assets/img/dental-office.jpeg"> -->
         <div class="content-body">
             <h1>Liberty Family Dentistry</h1>
             <h3>A Healthy Smile Starts With Us</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <button>Request Appointment</button>
+            <p>Here at Liberty Family Dentistry we are passionate about what we do. </p>
+            <p>We make it our top priority to make sure that you and your family feel confident about your smile.</p>
+            <button routerLink="/contact-us" class="request-button">Request Appointment</button>
         </div>
     </div>
-   
 
-    <!-- <div class="content-text">
-        Feel Great About Your Smile
-        <div class="header">Liberty Family Dentistry</div>
-        <div class="sub-header">Your great smile begins with a great dentist</div>
-        <button class="learn-more">LEARN MORE</button>
-    </div> -->
-    
 </div>
 
 <div class="container-fluid services" *ngIf="page == '/services'">
     <div class="services-picture">
         <div class="services-body">
-            <h3> <a routerLink="/">Home</a><span class="fa fa-chevron-right"></span><a routerLink="/Services">Services</a></h3>
+            <h3> <a routerLink="/">Home</a><span class="fa fa-chevron-right"></span>Services</h3>
             <h1>Our Services</h1>
         </div>
     </div>
 </div>
 
+<div class="container-fluid services" *ngIf="page.includes('/services/')">
+    <div class="services-picture">
+        <div class="services-body">
+            <h3> <a routerLink="/">Home</a><span class="fa fa-chevron-right"></span><a routerLink="/services">Services</a> <span class="fa fa-chevron-right"></span>{{subpage}}</h3>
+            <h1>{{subpage}}</h1>
+        </div>
+    </div>
+</div>
 
 <div class="container-fluid about-us" *ngIf="page == '/about-us'">
     <div class="about-us-picture">
@@ -44,6 +43,15 @@
         <div class="contact-us-body">
             <h3> <a routerLink="/">Home</a><span class="fa fa-chevron-right"></span><a routerLink="/contact-us">Contact Us</a></h3>
             <h1>Contact Us</h1>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid pay-now" *ngIf="page == '/pay-now'">
+    <div class="pay-now-picture">
+        <div class="pay-now-body">
+            <h3> <a routerLink="/">Home</a><span class="fa fa-chevron-right"></span><a routerLink="/pay-now">Pay Now</a></h3>
+            <h1>Pay Your Bill Now</h1>
         </div>
     </div>
 </div>

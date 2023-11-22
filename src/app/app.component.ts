@@ -15,17 +15,14 @@ export class AppComponent {
   }
   ngOnInit() {
     this.router = this._router.url; 
-    console.log(this.router)
   }
   
   ngOnChanges(changes: SimpleChanges) {
     // changes.prop contains the old and the new value...
-    console.log(changes)
     if(this._router.url == "contact-us"){
       this.isOn=true;
     }
-    console.log(this.isOn)
-    console.log(window.location.href)
+
   }
   
 }
