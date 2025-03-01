@@ -1,8 +1,6 @@
 ### 🦷 Liberty Family Dentistry  
 
-![Liberty Family Dentistry](https://libertylanedentistry.com/)  
-
-Welcome to **Liberty Family Dentistry**, where we provide high-quality, patient-centered dental care in a comfortable environment. Our goal is to help patients achieve and maintain healthy, beautiful smiles through comprehensive dental services.  
+Welcome to [**Liberty Family Dentistry**](https://libertylanedentistry.com/), where we provide high-quality, patient-centered dental care in a comfortable environment. Our goal is to help patients achieve and maintain healthy, beautiful smiles through comprehensive dental services.  
 
 ### 🌟 Features  
 ✅ General & Preventive Dentistry (cleanings, exams, X-rays)  
