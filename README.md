@@ -10,10 +10,10 @@ Welcome to [**Liberty Family Dentistry**](https://libertylanedentistry.com/), wh
 ✅ Emergency Dental Services  
 
 ### 🛠️ Tech Stack  
-- **Backend:** Django (Python)  
+- **Backend:** NodeJS (still in works) 
 - **Database:** PostgreSQL  
-- **Frontend:** HTML, CSS, JavaScript (if applicable)  
-- **Hosting:** (Specify if deployed on AWS, Heroku, etc.)  
+- **Frontend:** Angular Framework
+- **Hosting:** Hosted on Hostinger 
 
 ---
 
@@ -25,19 +25,12 @@ git clone https://github.com/MartinaShenoda/LibertyFamilyDentistry.git
 cd LibertyFamilyDentistry
 ```
 
-### 2️⃣ Create & Activate a Virtual Environment  
+### 2️⃣  Install Dependencies  
 ```sh
-python -m venv venv
-source venv/bin/activate  # Mac/Linux
-venv\Scripts\activate     # Windows
+npm install
 ```
 
-### 3️⃣ Install Dependencies  
-```sh
-pip install -r requirements.txt
-```
-
-### 4️⃣ Set Up Environment Variables  
+### 3️⃣  Set Up Environment Variables  
 Create a `.env` file in the project root and add:  
 ```
 DB_NAME=your_db_name
@@ -49,10 +42,12 @@ SECRET_KEY=your_secret_key
 DEBUG=True
 ```
 
-### 5️⃣ Apply Migrations & Run Server  
+### 4️⃣ Apply Migrations & Run Server  
 ```sh
-python manage.py migrate
-python manage.py runserver
+npx sequelize-cli db:migrate  # Sequelize
+npx prisma migrate dev        # Prisma
+
+npm start
 ```
 
 Your app should now be running at: **http://127.0.0.1:8000/** 🎉  
@@ -61,7 +56,7 @@ Your app should now be running at: **http://127.0.0.1:8000/** 🎉
 
 ## 🧪 Running Tests  
 ```sh
-python manage.py test
+npm test
 ```
 
 ---
@@ -69,13 +64,11 @@ python manage.py test
 ## 📂 Project Structure  
 ```
 LibertyFamilyDentistry/
-│── liberty_dentistry/      # Main Django project settings
-│── appointments/           # Appointment scheduling app
-│── patients/               # Patient management app
-│── static/                 # CSS, JS, images
-│── templates/              # HTML templates
-│── manage.py               # Django CLI tool
-│── requirements.txt        # Dependencies
+├── src/                # Angular source code
+│   ├── app
+│   ├── assets             
+├── package.json            # Dependencies
+├── angular.json      
 │── README.md               # Project documentation
 │── .gitignore              # Ignored files
 ```
@@ -102,7 +95,3 @@ We welcome contributions! To contribute:
 - [ ] Online appointment booking  
 - [ ] Automated appointment reminders  
 - [ ] Patient portal for records & billing  
-
----
-
-Let me know if you’d like any modifications! 🚀
