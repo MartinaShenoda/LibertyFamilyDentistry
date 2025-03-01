@@ -50,7 +50,7 @@ npx prisma migrate dev        # Prisma
 npm start
 ```
 
-Your app should now be running at: **http://127.0.0.1:8000/** 🎉  
+Your app should now be running at: **http://127.0.0.1:4200/** 🎉  
 
 ---
 
